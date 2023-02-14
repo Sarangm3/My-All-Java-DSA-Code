@@ -1,0 +1,1 @@
+A forecasting technique for time series data, moving averages use an average of relevant preceding data to calculate dummy data. For example, to predict rainfall in April, you would take the average of rainfall from January to March. It's simple, yet highly effective.
