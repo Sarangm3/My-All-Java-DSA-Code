@@ -1,4 +1,4 @@
-package BasicJava;
+package OOPs;
 
 interface camera{
     void takesnap();

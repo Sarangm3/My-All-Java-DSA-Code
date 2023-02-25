@@ -1,4 +1,4 @@
-package BasicJava;
+package OOPs;
 
 interface Bicycle{
     int a=45;//property

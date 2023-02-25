@@ -55,8 +55,8 @@ public class Dijkstra_s_shortest_path {
 //        u = 0, v = 2, w = 6
         ArrayList<ArrayList<ArrayList<Integer>>> adj = new ArrayList<>();
         //first array list for different source node
-        //second different dest node for source node
-        //thrid sore different dest node with weight pair
+        //second Arraylist store object of arraylist which is third arraylist
+        //third store different dest node with weight pair
 
         for (int i = 0; i < V; i++) {
             ArrayList<ArrayList<Integer>> list= new ArrayList<>();
