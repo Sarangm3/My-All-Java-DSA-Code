@@ -47,8 +47,9 @@ public class CreatTreeStructure {
 //        System.out.println();
 //        runtimeVurn(root,2);
 //        System.out.println(ans3);
-        System.out.println(BST_or_Not(root));
-        verticalOrder(root);
+//        System.out.println(BST_or_Not(root));
+//        verticalOrder(root);
+        System.out.println(isCompleteTree(root));
     }
 
     static Node createTree() {
@@ -256,6 +257,29 @@ public class CreatTreeStructure {
         }
         System.out.println(ans);
         return ans;
+    }
+    static boolean isCompleteTree(Node root) {
+        Queue<Node> q = new LinkedList<>();
+        boolean flag = false;
+        q.offer(root);
+        while(!q.isEmpty()){
+            Node node = q.poll();
+            if(node==null){
+                flag = true;
+            }
+            else{
+                //it mean before element there must be null element
+                //so flag is true function give false
+
+                //Intution : simple so all example answer false
+                //in which example which contain null between element
+                if(flag) return false;
+                q.offer(node.left);
+                q.offer(node.right);
+
+            }
+        }
+        return true;
     }
 }
 class Pair {
